@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="build/styles/main.css">
+    <title>Base 64</title>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <p>Escolha uma linguagem:</p>
+            <select id="linguagem">
+                <option value="base64">Base 64</option>
+                <option value="cesar">Cifra de César</option>
+            </select>
+
+            <p>Escolha a opção:</p>
+            <input type="radio" name="operacao" id="codificar" checked/> 
+            <label for="codificar">Codificar</label>
+
+            <input type="radio" name="operacao" id="decodificar">
+            <label for="decodificar">Decodificar</label>
+
+            <p>Escreva a mensagem:</p>
+            <textarea id="mensagem"></textarea>
+            <button type="submit" id="botao">Codificar</button>
+
+            <p id="erro"></p>
+        </form>
+    </div>
+    <div class="container" id="mensagemSaida">
+        <p></p>
+    </div>
+    <script src="./source/scripts/script.js"></script>
+</body>
+</html>
